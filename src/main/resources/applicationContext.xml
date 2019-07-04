@@ -5,7 +5,7 @@
        xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
-    <aop:aspectj-autoproxy/>
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
     <context:component-scan base-package="com.tt.aopdemo"/>
 <!--    <bean id="productDao" class="com.tt.aopdemo.ProductDao"/>-->
 
